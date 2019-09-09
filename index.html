@@ -81,7 +81,7 @@
 
                     <ul>
                         <li class="current"><a href="#">
-                            <div>Home</div>
+                            <div id="headerHome"></div>
                         </a>
                             <ul>
                                 <li><a href="index-corporate.html">
@@ -466,7 +466,7 @@
                             <div>Blog</div>
                         </a></li>
                         <li><a href="#">
-                            <div>Contact</div>
+                            <div id="headerContact"></div>
                         </a></li>
                     </ul>
 
@@ -1185,9 +1185,15 @@
 
 <!-- Translation -->
 <script>
+  const home = "home";
   const detail = "dettaglio";
+  const contactUs = "contattaci";
+
   document.getElementById('pageTitle').innerHTML = "Loleta | Boyzone";
-  document.getElementById('slider1Text').innerHTML = "La nostra marca Loleta";
+
+  document.getElementById('headerHome').innerHTML = home;
+  document.getElementById('headerContact').innerHTML = contactUs;
+
   document.getElementById('slider1Title').innerHTML = "LOLETA";
   document.getElementById('slider1Subtitle').innerHTML = "La nostra marca";
   document.getElementById('slider1Button').innerHTML = detail;
