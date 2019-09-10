@@ -633,7 +633,8 @@
                                 <div class="item-desc">
                                     <p id="companyIntroduction"></p>
                                 </div>
-                                <div class="button button-border button-circle nomargin font-secondary" id="companyAction">
+                                <div class="button button-border button-circle nomargin font-secondary"
+                                     id="companyAction">
                                 </div>
                             </div>
                         </div>
@@ -676,15 +677,22 @@
 
             <div class="container topmargin clearfix">
                 <div class="heading-block nobottomborder bottommargin center">
-                    <h3 class="" style="font-size: 20px;">Shop By Categories</h3>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing<br>elit voluptas.</span>
+                    <h3 class="" style="font-size: 20px;" id="whatWeSellTitle"></h3>
+                    <span id="whatWeSellSubtitle"></span>
                 </div>
 
                 <div class="row clearfix clear-bottommargin">
                     <div class="col-lg-2 col-md-4 col-6 offset-lg-1">
                         <div class="feature-box fbox-center nobottomborder bottommargin">
-                            <div class="before-heading ls2">0mm - 31mm</div>
-                            <h3 class="t400 ls1">Laptop</h3>
+                            <h3 class="t400 ls1" id="whatWeSell1"></h3>
+                            <div class="fbox-image imagescalein">
+                                <a href="#"><img src="demos/ecommerce/images/icons/1.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="feature-box fbox-center nobottomborder bottommargin">
+                            <h3 class="t400 ls1" id="whatWeSell2"></h3>
                             <div class="fbox-image imagescalein">
                                 <a href="#"><img src="demos/ecommerce/images/icons/2.png" alt=""></a>
                             </div>
@@ -692,17 +700,7 @@
                     </div>
                     <div class="col-lg-2 col-md-4 col-6">
                         <div class="feature-box fbox-center nobottomborder bottommargin">
-                            <div class="before-heading ls2">0mm - 31mm</div>
-                            <h3 class="t400 ls1">Hand Bag</h3>
-                            <div class="fbox-image imagescalein">
-                                <a href="#"><img src="demos/ecommerce/images/icons/3.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="feature-box fbox-center nobottomborder bottommargin">
-                            <div class="before-heading ls2">0mm - 31mm</div>
-                            <h3 class="t400 ls1">Backpack</h3>
+                            <h3 class="t400 ls1" id="whatWeSell3"></h3>
                             <div class="fbox-image imagescalein">
                                 <a href="#"><img src="demos/ecommerce/images/icons/4.png" alt=""></a>
                             </div>
@@ -710,8 +708,7 @@
                     </div>
                     <div class="col-lg-2 col-md-4 col-6">
                         <div class="feature-box fbox-center nobottomborder bottommargin">
-                            <div class="before-heading ls2">0mm - 31mm</div>
-                            <h3 class="t400 ls1">Duffle</h3>
+                            <h3 class="t400 ls1" id="whatWeSell4"></h3>
                             <div class="fbox-image imagescalein">
                                 <a href="#"><img src="demos/ecommerce/images/icons/5.png" alt=""></a>
                             </div>
@@ -719,8 +716,7 @@
                     </div>
                     <div class="col-lg-2 col-md-4 col-6">
                         <div class="feature-box fbox-center nobottomborder bottommargin">
-                            <div class="before-heading ls2">0mm - 31mm</div>
-                            <h3 class="t400 ls1">Trolley</h3>
+                            <h3 class="t400 ls1" id="whatWeSell5"></h3>
                             <div class="fbox-image imagescalein">
                                 <a href="#"><img src="demos/ecommerce/images/icons/6.png" alt=""></a>
                             </div>
@@ -732,20 +728,11 @@
             <div class="section dark nobottommargin">
                 <div class="container clearfix">
 
-                    <div class="row payments-info">
-                        <div class="col-lg-6">
-                            <p class="lead nomargin">Free Shipping on Orders of <strong>$199</strong> or above.</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="payment-cards clearfix" style="margin-top: 5px;">
-                                <li><img src="demos/xmas/images/cards/visa.svg" alt="Visa"></li>
-                                <li><img src="demos/xmas/images/cards/mc.svg" alt="Master Card"></li>
-                                <li><img src="demos/xmas/images/cards/ae.svg" alt="American Express"></li>
-                                <li><img src="demos/xmas/images/cards/pp.svg" alt="PayPal"></li>
-                                <li><img src="demos/xmas/images/cards/sk.svg" alt="Skrill"></li>
-                                <li><img src="demos/xmas/images/cards/2co.svg" alt="2CheckOut"></li>
-                                <li><img src="demos/xmas/images/cards/wu.svg" alt="Western Union"></li>
-                            </ul>
+                    <div class="row justify-content-center">
+                        <div class="title-center">
+                            <p class="lead nomargin" id="contactUsSection"></p>
+                            <a href="mailto: info@loletaboyzone.com"><u id="contactUsSectionEmail"></u></a>
+
                         </div>
                     </div>
                 </div>
@@ -771,35 +758,23 @@
                         <div class="row clearfix">
                             <div class="col-lg-6">
                                 <div class="widget widget_links clearfix">
-                                    <h4>Hire</h4>
+                                    <h4 id="footer1Header"></h4>
                                     <ul>
-                                        <li><a href="#">Documentation</a></li>
-                                        <li><a href="#">Feedback</a></li>
-                                        <li><a href="#">Plugins</a></li>
+                                        <li><a href="#" id="footer1Content1"></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="widget widget_links clearfix">
-                                    <h4>Community</h4>
+                                    <h4 id="footer2Header"></h4>
                                     <ul>
-                                        <li><a href="#">Documentation</a></li>
-                                        <li><a href="#">Feedback</a></li>
-                                        <li><a href="#">Plugins</a></li>
-                                        <li><a href="#">Support Forums</a></li>
+                                        <li>
+                                            <a href="mailto: info@loletaboyzone.com" id="footer2Content1"></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="clear"></div>
-
-                        <div class="line line-sm"></div>
-
-                        <div class="copy-link"><a href="mailto:noreply@canvas.com"><i class="icon-envelope2"></i>
-                            info@canvas.com</a> <span class="middot"> | </span> <a href="tel:+91-11-6541-6369"><i
-                            class="icon-headphones"></i> +91-11-6541-6369</a> <span class="middot"> | </span> <a
-                            href="skype:CanvasOnSkype?call"><i class="icon-skype2"></i> CanvasOnSkype</a></div>
 
                     </div>
 
@@ -838,24 +813,6 @@
                             </div>
                         </div>
 
-                        <div class="widget subscribe-widget notopmargin clearfix">
-                            <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp;
-                                Inside Scoops:</h5>
-                            <div class="widget-subscribe-form-result"></div>
-                            <form id="widget-subscribe-form" action="include/subscribe.php" method="post"
-                                  class="nobottommargin">
-                                <div class="input-group divcenter">
-                                    <input type="email" id="widget-subscribe-form-email"
-                                           name="widget-subscribe-form-email" class="form-control required email"
-                                           placeholder="Enter your Email">
-                                    <div class="input-group-append">
-                                        <button class="button button-black t300 button-dark ls2 uppercase"
-                                                type="submit">Subscribe
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
 
                     </div>
                 </div>
@@ -923,6 +880,8 @@
   const italiano = "Italiano";
   const english = "English";
 
+  const contactEmail = "info@loletaboyzone.com";
+
   // Brand
   const companyName = "Gruppo XU";
   const companyIntroduction = "Gruppo XU";
@@ -930,6 +889,7 @@
   const loletaDescription = "Loleta marca descrizioni";
   const boyzone = "Boyzone";
   const boyzoneDescription = "Boyzone marca descrizioni";
+
 
   // Header
   const headerLanguagesItalian = italiano;
@@ -985,6 +945,10 @@
   // Company
   document.getElementById('companyAction').innerHTML = contactUs;
 
+  // Contact us
+  document.getElementById('contactUsSection').innerHTML = "Se avete domande o suggerimenti, mettetevi in contatto con us: ";
+  document.getElementById('contactUsSectionEmail').innerHTML = contactEmail;
+
   // Brand
   document.getElementById('brand1Title').innerHTML = loleta;
   document.getElementById('brand1Subtitle').innerHTML = loletaDescription;
@@ -1000,6 +964,20 @@
   document.getElementById('companyIntroduction').innerHTML = "Loleta e Boyzone sono i due ultimi nati nella serie dei marchi per l’abbigliamento dai 3 mesi ai 16 anni che il “gruppo della famiglia xu” ha creato da quando gia’ una trentina di anni fa si e’ stabilita in italia.\n" +
     "obiettivo del gruppo e’ sempre stato quello di sapersi adeguare alle richieste e alle sfide che il mercato dell’abbigliamento ha da sempre lanciato.\n";
 
+  // What we sell
+  document.getElementById('whatWeSellTitle').innerHTML = "Cosa vendiamo";
+  document.getElementById('whatWeSellSubtitle').innerHTML = "Scopri l'ampia selezione di vestiti per bambini";
+  document.getElementById('whatWeSell1').innerHTML = "Maglietta";
+  document.getElementById('whatWeSell2').innerHTML = "Pantaloni";
+  document.getElementById('whatWeSell3').innerHTML = "Gonna";
+  document.getElementById('whatWeSell4').innerHTML = "Maglietta";
+  document.getElementById('whatWeSell5').innerHTML = "Giacca";
+
+  // Footer
+  document.getElementById('footer1Header').innerHTML = "Chi siamo";
+  document.getElementById('footer1Content1').innerHTML = "Gruppo XU";
+  document.getElementById('footer2Header').innerHTML = contactUs;
+  document.getElementById('footer2Content1').innerHTML = contactEmail;
 
 </script>
 </body>
