@@ -45,16 +45,6 @@
 ============================================= -->
 <div id="wrapper" class="clearfix">
 
-    <!-- Top Bar
-    ============================================= -->
-    <div id="top-bar" class="dark">
-
-        <div class="container clearfix">
-            <p class="center">Welcome: Introducing canvas market. <a href="#">Shop Now</a><a href="#" id="close-bar"><i
-                class="icon-line-cross fright"></i></a></p>
-        </div>
-
-    </div>
 
     <!-- Header
     ============================================= -->
@@ -470,64 +460,34 @@
                         </a></li>
                     </ul>
 
-                    <!-- Top Search
-                    ============================================= -->
-                    <div id="top-search">
-                        <a href="#" id="top-search-trigger"><i class="icon-line2-magnifier"></i><i
-                            class="icon-line-cross"></i></a>
-                        <form action="search.html" method="get">
-                            <input type="text" name="q" class="form-control" value=""
-                                   placeholder="Type &amp; Hit Enter..">
-                        </form>
-                    </div><!-- #top-search end -->
-
-                    <!-- Top Cart
+                    <!-- language
                     ============================================= -->
                     <div id="top-cart">
-                        <a href="#" id="top-cart-trigger"><i class="icon-line2-handbag"></i><span>5</span></a>
+                        <a href="#" id="top-cart-trigger">
+                            <img src="include/rs-plugin/demos/assets/svg/action/ic_language_24px.svg"/>
+                        </a>
                         <div class="top-cart-content">
                             <div class="top-cart-title">
-                                <h4>Shopping Cart</h4>
+                                <h4 id="headerLanguages"></h4>
                             </div>
                             <div class="top-cart-items">
                                 <div class="top-cart-item clearfix">
-                                    <div class="top-cart-item-image">
-                                        <a href="#"><img src="demos/ecommerce/images/featured/1.jpg"
-                                                         alt="Blue Shoulder Bag"/></a>
-                                    </div>
                                     <div class="top-cart-item-desc">
-                                        <a href="#" class="t400">Blue Shoulder Bag</a>
-                                        <span class="top-cart-item-price">$19.99</span>
-                                        <span class="top-cart-item-quantity">x 2</span>
+                                        <a href="#" class="t400" id="headerLanguagesItalian"></a>
                                     </div>
                                 </div>
                                 <div class="top-cart-item clearfix">
-                                    <div class="top-cart-item-image">
-                                        <a href="#" class="t400"><img src="demos/ecommerce/images/featured/6.jpg"
-                                                                      alt="Leather Bag"/></a>
-                                    </div>
                                     <div class="top-cart-item-desc">
-                                        <a href="#" class="t400">Leather Bag</a>
-                                        <span class="top-cart-item-price">$24.99</span>
-                                        <span class="top-cart-item-quantity">x 3</span>
+                                        <a href="#" class="t400" id="headerLanguagesEnglish"></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="top-cart-action clearfix">
-                                <span class="fleft top-checkout-price t600 font-secondary"
-                                      style="color: #333;">$114.95</span>
-                                <button class="button button-dark button-circle button-small nomargin fright">View
-                                    Cart
-                                </button>
-                            </div>
+
                         </div>
                     </div><!-- #top-cart end -->
 
                     <!-- Top Search
                     ============================================= -->
-                    <div id="top-account">
-                        <a href="#"><i class="icon-line2-user"></i></a>
-                    </div><!-- #top-search end -->
 
                 </nav><!-- #primary-menu end -->
 
@@ -633,35 +593,6 @@
             </div>
 
 
-            <!-- Brand
-            ============================================= -->
-            <div class="clear"></div>
-            <div class="heading-block nobottomborder center">
-                <h3>Popular Categories</h3>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit voluptas.</span>
-            </div>
-            <div class="row align-items-stretch bottommargin clearfix">
-                <div class="col-md-6"
-                     style="background: url('demos/ecommerce/images/sections/1.jpg') center 45% no-repeat; background-size: cover; padding: 0 0 500px;">
-                    <div class="section-content topmargin-sm">
-                        <h3 id="brand1Title"></h3>
-                        <span class="font-primary" id="brand1Subtitle"></span>
-                        <a class="more-link uppercase t500" id="brand1Action" style="font-family: 'Montserrat';"><i
-                            class="icon-line-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6"
-                     style="background: url('demos/ecommerce/images/sections/2.jpg') center center no-repeat; background-size: cover; padding: 0 0 500px;">
-                    <div class="section-content topmargin-sm">
-                        <h3 id="brand2Title"></h3>
-                        <span class="font-primary" id="brand2Subtitle"></span>
-                        <a class="more-link uppercase t500" id="brand2Action" style="font-family: 'Montserrat';"><i
-                            class="icon-line-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-
             <!-- Company
             ============================================= -->
             <div class="section nobg">
@@ -694,20 +625,13 @@
                         <div class="col-lg-5 offset-lg-1">
                             <div class="featured-item topmargin">
                                 <div class="item-title">
-                                    <div class="before-heading t600 ls5"><a href="#" style="color: #aab7bd !important;">Leather
-                                        Bags <i class="icon-angle-right"></i></a></div>
-                                    <h3><a href="#">Lady Shoulder Bag.</a></h3>
+                                    <h3><a href="#" id="companyTitle"></a></h3>
                                 </div>
-                                <div class="item-meta font-secondary">
-                                    SKU: 8465415.
-                                    Design: Leather / Blue
+                                <div class="item-meta font-secondary" id="companySubtitle">
                                 </div>
                                 <div class="clear"></div>
                                 <div class="item-desc">
-                                    <p>Proactively empower highly efficient growth strategies Completely enhance
-                                        inexpensive best practices before front-end content. Completely procrastinate
-                                        innovative vortals through maintainable leadership skills. Continually foster
-                                        business sources for viral leadership skills.</p>
+                                    <p id="companyIntroduction"></p>
                                 </div>
                                 <div class="item-color bottommargin-sm">
                                     <span>Available Colors:</span>
@@ -717,6 +641,34 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand
+            ============================================= -->
+            <div class="clear"></div>
+            <div class="heading-block nobottomborder center">
+                <h3>Popular Categories</h3>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit voluptas.</span>
+            </div>
+            <div class="row align-items-stretch bottommargin clearfix">
+                <div class="col-md-6"
+                     style="background: url('demos/ecommerce/images/sections/1.jpg') center 45% no-repeat; background-size: cover; padding: 0 0 500px;">
+                    <div class="section-content topmargin-sm">
+                        <h3 id="brand1Title"></h3>
+                        <span class="font-primary" id="brand1Subtitle"></span>
+                        <a class="more-link uppercase t500" id="brand1Action" style="font-family: 'Montserrat';"><i
+                            class="icon-line-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6"
+                     style="background: url('demos/ecommerce/images/sections/2.jpg') center center no-repeat; background-size: cover; padding: 0 0 500px;">
+                    <div class="section-content topmargin-sm">
+                        <h3 id="brand2Title"></h3>
+                        <span class="font-primary" id="brand2Subtitle"></span>
+                        <a class="more-link uppercase t500" id="brand2Action" style="font-family: 'Montserrat';"><i
+                            class="icon-line-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -972,13 +924,19 @@
   const contactUs = "contattaci";
   const view = "Visualizza";
   const discover = "Scopri";
+  const italiano = "Italiano";
+  const english = "English";
 
   // Brand
+  const companyName = "Gruppo XU";
+  const companyIntroduction = "Gruppo XU";
   const loleta = "Loleta";
   const loletaDescription = "Loleta marca descrizioni";
   const boyzone = "Boyzone";
   const boyzoneDescription = "Boyzone marca descrizioni";
 
+  // Header
+  const headerLanguagesItalian = italiano;
 
   // Category
   const category0to18Months = "0-18 mesi";
@@ -992,6 +950,10 @@
   const category8to16Years = "8-16 anni";
   const category8to16YearsDescription = "Abbigliamento Ragazzi 8-16 anni";
 
+  // Header
+  document.getElementById('headerLanguages').innerHTML = "Lingue supportate";
+  document.getElementById('headerLanguagesItalian').innerHTML = italiano;
+  document.getElementById('headerLanguagesEnglish').innerHTML = english;
 
   document.getElementById('pageTitle').innerHTML = loleta + " | " + boyzone;
 
@@ -1032,6 +994,13 @@
   document.getElementById('brand2Title').innerHTML = boyzone;
   document.getElementById('brand2Subtitle').innerHTML = boyzoneDescription;
   document.getElementById('brand2Action').innerHTML = discover;
+
+  // Company
+  document.getElementById('companyTitle').innerHTML = companyName;
+  document.getElementById('companySubtitle').innerHTML = "Nato negli anni 90";
+  document.getElementById('companyIntroduction').innerHTML = "Loleta e Boyzone sono i due ultimi nati nella serie dei marchi per l’abbigliamento dai 3 mesi ai 16 anni che il “gruppo della famiglia xu” ha creato da quando gia’ una trentina di anni fa si e’ stabilita in italia.\n" +
+    "obiettivo del gruppo e’ sempre stato quello di sapersi adeguare alle richieste e alle sfide che il mercato dell’abbigliamento ha da sempre lanciato.\n";
+
 
 </script>
 </body>
