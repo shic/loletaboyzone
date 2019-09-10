@@ -584,6 +584,8 @@
 
         <div class="content-wrap nopadding">
 
+            <!-- Category
+            ============================================= -->
             <div class="section notopmargin" style="padding: 100px 0;">
                 <div class="container clearfix">
 
@@ -630,6 +632,9 @@
                 </div>
             </div>
 
+
+            <!-- Popular
+            ============================================= -->
             <div class="container clearfix">
 
                 <div class="heading-block nobottomborder center">
@@ -709,6 +714,32 @@
                                 </div>
                             </div>
                         </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Brand
+            ============================================= -->
+            <div class="clear"></div>
+
+            <div class="row align-items-stretch bottommargin clearfix">
+                <div class="col-md-6"
+                     style="background: url('demos/ecommerce/images/sections/1.jpg') center 45% no-repeat; background-size: cover; padding: 0 0 500px;">
+                    <div class="section-content topmargin-sm">
+                        <h3 id="brand1Title"></h3>
+                        <span class="font-primary" id="brand1Subtitle"></span>
+                        <a class="more-link uppercase t500" id="brand1Action" style="font-family: 'Montserrat';"><i
+                            class="icon-line-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6"
+                     style="background: url('demos/ecommerce/images/sections/2.jpg') center center no-repeat; background-size: cover; padding: 0 0 500px;">
+                    <div class="section-content topmargin-sm">
+                        <h3 id="brand2Title"></h3>
+                        <span class="font-primary" id="brand2Subtitle"></span>
+                        <a class="more-link uppercase t500" id="brand2Action" style="font-family: 'Montserrat';"><i
+                            class="icon-line-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -925,28 +956,6 @@
                 </div>
             </div>
 
-            <div class="clear"></div>
-
-            <div class="row align-items-stretch bottommargin clearfix">
-                <div class="col-md-6"
-                     style="background: url('demos/ecommerce/images/sections/1.jpg') center 45% no-repeat; background-size: cover; padding: 0 0 500px;">
-                    <div class="section-content topmargin-sm">
-                        <h3>Travel Bags for Men</h3>
-                        <span class="font-primary">Designed to help you never make your bed again. Superior materials for comfort and lasting quality in a complete bedding package.</span>
-                        <a class="more-link uppercase t500" style="font-family: 'Montserrat';">Go To Shop <i
-                            class="icon-line-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6"
-                     style="background: url('demos/ecommerce/images/sections/3.jpg') center center no-repeat; background-size: cover; padding: 0 0 500px;">
-                    <div class="section-content topmargin-sm">
-                        <h3>Luxury Bags for Women</h3>
-                        <span class="font-primary">Globally monetize unique metrics and enterprise markets. Efficiently implement cooperative e-services and integrated interfaces.</span>
-                        <a class="more-link uppercase t500" style="font-family: 'Montserrat';">Go To Shop <i
-                            class="icon-line-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
 
             <div class="clear"></div>
 
@@ -1194,8 +1203,15 @@
   const home = "home";
   const detail = "dettaglio";
   const contactUs = "contattaci";
+  const view = "Visualizza";
+  const discover = "Scopri";
+
+  // Brand
   const loleta = "Loleta";
+  const loletaDescription = "Loleta marca descrizioni";
   const boyzone = "Boyzone";
+  const boyzoneDescription = "Boyzone marca descrizioni";
+
 
   // Category
   const category0to18Months = "0-18 mesi";
@@ -1241,6 +1257,14 @@
   document.getElementById('category3Subtitle').innerHTML = category8to16YearsDescription;
   document.getElementById('category3Action').innerHTML = detail;
 
+  // Brand
+  document.getElementById('brand1Title').innerHTML = loleta;
+  document.getElementById('brand1Subtitle').innerHTML = loletaDescription;
+  document.getElementById('brand1Action').innerHTML = discover;
+
+  document.getElementById('brand2Title').innerHTML = boyzone;
+  document.getElementById('brand2Subtitle').innerHTML = boyzoneDescription;
+  document.getElementById('brand2Action').innerHTML = discover;
 
 </script>
 </body>
