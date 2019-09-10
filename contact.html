@@ -57,7 +57,7 @@
 
                     <ul>
                         <li><a href="index.html">
-                            <div>Home</div>
+                            <div id="headerHome"></div>
                         </a>
                             <ul>
                                 <li><a href="index-corporate.html">
@@ -1417,8 +1417,8 @@
     <section id="page-title">
 
         <div class="container clearfix">
-            <h1>Contact</h1>
-            <span id="getInTouchWithUs"></span>
+            <h1 id="pageTitleContact"></h1>
+            <span id="pageTitleGetInTouchWithUs"></span>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Contact</li>
@@ -1918,7 +1918,9 @@
 
 </script>
 <script>
-  document.getElementById('getInTouchWithUs').innerHTML = "Get in Touch with Us";
+  document.getElementById('pageTitleGetInTouchWithUs').innerHTML = "Get in Touch with Us";
+  document.getElementById('pageTitleContact').innerHTML = "contattaci";
+  document.getElementById('headerHome').innerHTML = "cassa";
 </script>
 </body>
 </html>
