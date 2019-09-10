@@ -633,11 +633,7 @@
                                 <div class="item-desc">
                                     <p id="companyIntroduction"></p>
                                 </div>
-                                <div class="item-color bottommargin-sm">
-                                    <span>Available Colors:</span>
-                                    <div id="item-color-dots" class="owl-dots"></div>
-                                </div>
-                                <div class="button button-border button-circle nomargin font-secondary">View Details
+                                <div class="button button-border button-circle nomargin font-secondary" id="companyAction">
                                 </div>
                             </div>
                         </div>
@@ -985,6 +981,9 @@
   document.getElementById('category3Title').innerHTML = category8to16Years;
   document.getElementById('category3Subtitle').innerHTML = category8to16YearsDescription;
   document.getElementById('category3Action').innerHTML = detail;
+
+  // Company
+  document.getElementById('companyAction').innerHTML = contactUs;
 
   // Brand
   document.getElementById('brand1Title').innerHTML = loleta;
