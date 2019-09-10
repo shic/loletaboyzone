@@ -593,8 +593,11 @@
                         </div>
                         <div class="col-md-2">
                             <div class="grid-info clearfix">
-                                <h3><a href="#">Fresh Arrivals<span>Summer is Coming!</span></a></h3>
-                                <a href="#" class="more-link clearfix">Shop Now</a>
+                                <h3><a href="#">
+                                    <div id="category1Title"></div>
+                                    <span id="category1Subtitle"></span></a>
+                                </h3>
+                                <a href="#" class="more-link clearfix" id="category1Action"></a>
                             </div>
                         </div>
                         <div class="col-md-2 grid-image">
@@ -602,9 +605,11 @@
                         </div>
                         <div class="col-md-2">
                             <div class="grid-info clearfix">
-                                <h3><a href="#">Acessories<span>Check out more Products for your Lifestyles</span></a>
+                                <h3><a href="#">
+                                    <div id="category2Title"></div>
+                                    <span id="category2Subtitle"></span></a>
                                 </h3>
-                                <a href="#" class="more-link clearfix">Know More</a>
+                                <a href="#" class="more-link clearfix" id="category2Action"></a>
                             </div>
                         </div>
 
@@ -613,10 +618,11 @@
                         </div>
                         <div class="col-md-2">
                             <div class="grid-info clearfix">
-                                <h3><a href="#">Our Store<span>Where we Manufacture!</span></a></h3>
-                                <i class="icon-map-marker2"></i> <a
-                                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.681463596743!2d-3.19397378404521!3d55.954892680607855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c78e1e83edab%3A0x627ac6bc4414f18b!2sGucci+-+Edinburgh+Harvey+Nichols+Women&#39;s!5e0!3m2!1sen!2sus!4v1489749205966"
-                                data-lightbox="iframe" class="more-link clearfix">Find Store</a>
+                                <h3><a href="#">
+                                    <div id="category3Title"></div>
+                                    <span id="category3Subtitle"></span></a>
+                                </h3>
+                                <a href="#" class="more-link clearfix" id="category3Action"></a>
                             </div>
                         </div>
                     </div>
@@ -1191,12 +1197,25 @@
   const loleta = "Loleta";
   const boyzone = "Boyzone";
 
+  // Category
+  const category0to18Months = "0-18 mesi";
+  const category0to18MonthsDescription = "Abbigliamento Bimbi 18 Mesi ";
+  const category6to36Months = "6-36 mesi";
+  const category6to36MonthsDescription = "Abbigliamento Bimbi 36 Mesi ";
+  const category0to3Years = "0-3 anni";
+  const category0to3YearsDescription = "Abbigliamento Bimbi 0-3 anni";
+  const category3to7Years = "3-7 anni";
+  const category3to7YearsDescription = "Abbigliamento Ragazzi 3-7 anni";
+  const category8to16Years = "8-16 anni";
+  const category8to16YearsDescription = "Abbigliamento Ragazzi 8-16 anni";
+
 
   document.getElementById('pageTitle').innerHTML = loleta + " | " + boyzone;
 
   document.getElementById('headerHome').innerHTML = home;
   document.getElementById('headerContact').innerHTML = contactUs;
 
+  // Slider
   document.getElementById('slider1Title').innerHTML = loleta.toUpperCase();
   document.getElementById('slider1Subtitle').innerHTML = "La nostra marca";
   document.getElementById('slider1Button').innerHTML = detail;
@@ -1207,6 +1226,22 @@
 
   document.getElementById('slider3Title').innerHTML = contactUs.toUpperCase();
   document.getElementById('slider3Button').innerHTML = detail;
+
+
+  // Category
+  document.getElementById('category1Title').innerHTML = category0to3Years;
+  document.getElementById('category1Subtitle').innerHTML = category0to3YearsDescription;
+  document.getElementById('category1Action').innerHTML = detail;
+
+  document.getElementById('category2Title').innerHTML = category3to7Years;
+  document.getElementById('category2Subtitle').innerHTML = category3to7YearsDescription;
+  document.getElementById('category2Action').innerHTML = detail;
+
+  document.getElementById('category3Title').innerHTML = category8to16Years;
+  document.getElementById('category3Subtitle').innerHTML = category8to16YearsDescription;
+  document.getElementById('category3Action').innerHTML = detail;
+
+
 </script>
 </body>
 </html>
