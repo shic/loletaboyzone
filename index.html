@@ -554,21 +554,21 @@
                     </div>
                 </div>
                 <div class="swiper-slide dark"
-                     style="background: url('demos/ecommerce/images/slider/3.jpg') no-repeat center 20%; background-size: cover">
+                     style="background: url('demos/ecommerce/images/slider/2.jpg') no-repeat center 20%; background-size: cover">
                     <div class="container clearfix">
                         <div class="slider-caption slider-caption-center">
-                            <div class="h5 mb-2 font-secondary">Summer Collections</div>
-                            <h2 class="bottommargin-sm text-white">Sale 40% Off</h2>
-                            <a href="#" class="button bg-white text-dark button-light">Shop Beachwear</a>
+                            <div class="h5 mb-2 font-secondary" id="slider2Subtitle"></div>
+                            <h2 class="bottommargin-sm text-white" id="slider2Title"></h2>
+                            <a href="#" class="button bg-white text-dark button-light" id="slider2Button"></a>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide dark"
-                     style="background: url('demos/ecommerce/images/slider/2.jpg') no-repeat center 40%; background-size: cover">
+                     style="background: url('demos/ecommerce/images/slider/3.jpg') no-repeat center 40%; background-size: cover">
                     <div class="container clearfix">
                         <div class="slider-caption slider-caption-center">
-                            <h2 class="bottommargin-sm text-white">New Arrivals / 18</h2>
-                            <a href="#" class="button bg-white text-dark button-light">Shop Womenswear</a>
+                            <h2 class="bottommargin-sm text-white" id="slider3Title"></h2>
+                            <a href="#" class="button bg-white text-dark button-light" id="slider3Button"></a>
                         </div>
                     </div>
                 </div>
@@ -1200,6 +1200,13 @@
   document.getElementById('slider1Title').innerHTML = loleta.toUpperCase();
   document.getElementById('slider1Subtitle').innerHTML = "La nostra marca";
   document.getElementById('slider1Button').innerHTML = detail;
+
+  document.getElementById('slider2Title').innerHTML = boyzone.toUpperCase();
+  document.getElementById('slider2Subtitle').innerHTML = "La nostra marca";
+  document.getElementById('slider2Button').innerHTML = detail;
+
+  document.getElementById('slider3Title').innerHTML = contactUs.toUpperCase();
+  document.getElementById('slider3Button').innerHTML = detail;
 </script>
 </body>
 </html>
