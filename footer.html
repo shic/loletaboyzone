@@ -1,3 +1,28 @@
+<html>
+
+<body>
+<script>
+  const home = "home";
+  const detail = "dettaglio";
+  const contactUs = "contattaci";
+  const view = "Visualizza";
+  const discover = "Scopri";
+  const italiano = "Italiano";
+  const english = "English";
+  const whoWeAre = "Chi siamo";
+
+  const companyName = "Gruppo Golden Age"
+
+  const contactEmail = "info@loletaboyzone.com";
+
+
+  // Footer
+  document.getElementById('footer1Header').innerHTML = "whoWeAre";
+  document.getElementById('footer1Content1').innerHTML = companyName;
+  document.getElementById('footer2Header').innerHTML = contactUs;
+  document.getElementById('footer2Content1').innerHTML = contactEmail;
+
+</script>
 <footer id="footer" class="noborder nobg">
 
     <div class="container clearfix">
@@ -12,35 +37,23 @@
                     <div class="row clearfix">
                         <div class="col-lg-6">
                             <div class="widget widget_links clearfix">
-                                <h4>Hire</h4>
+                                <h4 id="footer1Header">Chi siamo</h4>
                                 <ul>
-                                    <li><a href="#">Documentation</a></li>
-                                    <li><a href="#">Feedback</a></li>
-                                    <li><a href="#">Plugins</a></li>
+                                    <li><a href="#" id="footer1Content1"></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="widget widget_links clearfix">
-                                <h4>Community</h4>
+                                <h4 id="footer2Header"></h4>
                                 <ul>
-                                    <li><a href="#">Documentation</a></li>
-                                    <li><a href="#">Feedback</a></li>
-                                    <li><a href="#">Plugins</a></li>
-                                    <li><a href="#">Support Forums</a></li>
+                                    <li>
+                                        <a href="mailto: info@loletaboyzone.com" id="footer2Content1"></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
-                    <div class="clear"></div>
-
-                    <div class="line line-sm"></div>
-
-                    <div class="copy-link"><a href="mailto:noreply@canvas.com"><i class="icon-envelope2"></i>
-                        info@canvas.com</a> <span class="middot"> | </span> <a href="tel:+91-11-6541-6369"><i
-                        class="icon-headphones"></i> +91-11-6541-6369</a> <span class="middot"> | </span> <a
-                        href="skype:CanvasOnSkype?call"><i class="icon-skype2"></i> CanvasOnSkype</a></div>
 
                 </div>
 
@@ -79,24 +92,6 @@
                         </div>
                     </div>
 
-                    <div class="widget subscribe-widget notopmargin clearfix">
-                        <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp;
-                            Inside Scoops:</h5>
-                        <div class="widget-subscribe-form-result"></div>
-                        <form id="widget-subscribe-form" action="include/subscribe.php" method="post"
-                              class="nobottommargin">
-                            <div class="input-group divcenter">
-                                <input type="email" id="widget-subscribe-form-email"
-                                       name="widget-subscribe-form-email" class="form-control required email"
-                                       placeholder="Enter your Email">
-                                <div class="input-group-append">
-                                    <button class="button button-black t300 button-dark ls2 uppercase"
-                                            type="submit">Subscribe
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
 
                 </div>
             </div>
@@ -106,3 +101,6 @@
     </div>
 
 </footer>
+
+</body>
+</html>
