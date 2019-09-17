@@ -422,84 +422,8 @@
 
     <!-- Footer
     ============================================= -->
-    <footer id="footer" class="noborder nobg">
 
-        <div class="container clearfix">
-
-            <!-- Footer Widgets
-            ============================================= -->
-            <div class="footer-widgets-wrap clearfix" style="padding: 60px 0 100px;">
-
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-
-                        <div class="row clearfix">
-                            <div class="col-lg-6">
-                                <div class="widget widget_links clearfix">
-                                    <h4 id="footer1Header"></h4>
-                                    <ul>
-                                        <li><a href="#" id="footer1Content1"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="widget widget_links clearfix">
-                                    <h4 id="footer2Header"></h4>
-                                    <ul>
-                                        <li>
-                                            <a href="mailto: info@loletaboyzone.com" id="footer2Content1"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-5 offset-lg-1">
-
-                        <div class="widget widget_links clearfix">
-                            <h4>Connect Socially</h4>
-
-                            <div class="bottommargin-sm clearfix">
-                                <a href="#" class="social-icon si-dark si-mini si-rounded si-facebook" title="Facebook">
-                                    <i class="icon-facebook"></i>
-                                    <i class="icon-facebook"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-dark si-mini si-rounded si-twitter" title="Twitter">
-                                    <i class="icon-twitter"></i>
-                                    <i class="icon-twitter"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-dark si-mini si-rounded si-instagram"
-                                   title="Instagram">
-                                    <i class="icon-instagram"></i>
-                                    <i class="icon-instagram"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-dark si-mini si-rounded si-pinterest"
-                                   title="Pinterest">
-                                    <i class="icon-pinterest"></i>
-                                    <i class="icon-pinterest"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-dark si-mini si-rounded si-vimeo" title="Vimeo">
-                                    <i class="icon-vimeo"></i>
-                                    <i class="icon-vimeo"></i>
-                                </a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div><!-- .footer-widgets-wrap end -->
-
-        </div>
-
-    </footer>
+    <div id="footer"></div>
     <!-- #footer end -->
 
 </div><!-- #wrapper end -->
@@ -546,6 +470,34 @@
     dotsContainer: '#item-color-dots',
     loop: true,
   });
+
+</script>
+
+<!-- Common component -->
+<script>
+  /*
+    fetch("footer.html")
+      .then(response => {
+        return response.text()
+      })
+      .then(data => {
+        document.querySelector("footer").innerHTML = data;
+      });
+  */
+  // 1. create a new XMLHttpRequest object -- an object like any other!
+  var myRequest = new XMLHttpRequest();
+  // 2. open the request and pass the HTTP method name and the resource as parameters
+  //myRequest.open('GET', 'https://codepen.io/eclairereese/pen/BzQBzR.html');
+  myRequest.open('GET', 'footer.html');
+  // 3. write a function that runs anytime the state of the AJAX request changes
+  myRequest.onreadystatechange = function () {
+    // 4. check if the request has a readyState of 4, which indicates the server has responded (complete)
+    if (myRequest.readyState === 4) {
+      // 5. insert the text sent by the server into the HTML of the 'ajax-content'
+      document.getElementById('footer').innerHTML = myRequest.responseText;
+    }
+  };
+  myRequest.send();
 
 </script>
 
