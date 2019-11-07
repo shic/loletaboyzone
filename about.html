@@ -227,22 +227,22 @@
                     <div class="col_one_third nobottommargin center" data-animate="bounceIn" data-delay="200">
                         <i class="i-plain i-large divcenter nobottommargin icon-briefcase"></i>
                         <div class="counter counter-lined">
-                            <span data-from="100" data-to="19800"
-                                  data-refresh-interval="50" data-speed="2500"
+                            <span data-from="5" data-to="100"
+                                  data-refresh-interval="30" data-speed="2500"
                                   data-comma="true"></span>
                             +
                         </div>
-                        <h5>vestiti venduti</h5>
+                        <h5>negozi</h5>
                     </div>
 
                     <div class="col_one_third nobottommargin center col_last" data-animate="bounceIn" data-delay="600">
                         <i class="i-plain i-large divcenter nobottommargin icon-dribbble2"></i>
                         <div class="counter counter-lined">
-                            <span data-from="5" data-to="20" data-refresh-interval="30"
+                            <span data-from="5" data-to="10" data-refresh-interval="30"
                                   data-speed="2700" data-comma="true"></span>
                             +
                         </div>
-                        <h5>venduto in oltre 20 paesi </h5>
+                        <h5>venduto in oltre 10 paesi </h5>
                     </div>
 
                 </div>
@@ -272,84 +272,7 @@
 
     <!-- Footer
     ============================================= -->
-    <footer id="footer" class="noborder nobg">
-
-        <div class="container clearfix">
-
-            <!-- Footer Widgets
-            ============================================= -->
-            <div class="footer-widgets-wrap clearfix" style="padding: 60px 0 100px;">
-
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-
-                        <div class="row clearfix">
-                            <div class="col-lg-6">
-                                <div class="widget widget_links clearfix">
-                                    <h4 id="footer1Header"></h4>
-                                    <ul>
-                                        <li><a href="#" id="footer1Content1"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="widget widget_links clearfix">
-                                    <h4 id="footer2Header"></h4>
-                                    <ul>
-                                        <li>
-                                            <a href="mailto: info@loletaboyzone.com" id="footer2Content1"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-5 offset-lg-1">
-
-                        <div class="widget widget_links clearfix">
-                            <h4>Connect Socially</h4>
-
-                            <div class="bottommargin-sm clearfix">
-                                <a href="#" class="social-icon si-dark si-mini si-rounded si-facebook" title="Facebook">
-                                    <i class="icon-facebook"></i>
-                                    <i class="icon-facebook"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-dark si-mini si-rounded si-twitter" title="Twitter">
-                                    <i class="icon-twitter"></i>
-                                    <i class="icon-twitter"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-dark si-mini si-rounded si-instagram"
-                                   title="Instagram">
-                                    <i class="icon-instagram"></i>
-                                    <i class="icon-instagram"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-dark si-mini si-rounded si-pinterest"
-                                   title="Pinterest">
-                                    <i class="icon-pinterest"></i>
-                                    <i class="icon-pinterest"></i>
-                                </a>
-
-                                <a href="#" class="social-icon si-dark si-mini si-rounded si-vimeo" title="Vimeo">
-                                    <i class="icon-vimeo"></i>
-                                    <i class="icon-vimeo"></i>
-                                </a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div><!-- .footer-widgets-wrap end -->
-
-        </div>
-
-    </footer>
+    <div id="footer"></div>
     <!-- #footer end -->
 
 </div><!-- #wrapper end -->
@@ -357,6 +280,25 @@
 <!-- Go To Top
 ============================================= -->
 <div id="gotoTop" class="icon-angle-up"></div>
+
+<!-- Common component -->
+<script>
+  // 1. create a new XMLHttpRequest object -- an object like any other!
+  var myRequest = new XMLHttpRequest();
+  // 2. open the request and pass the HTTP method name and the resource as parameters
+  //myRequest.open('GET', 'https://codepen.io/eclairereese/pen/BzQBzR.html');
+  myRequest.open('GET', 'footer.html');
+  // 3. write a function that runs anytime the state of the AJAX request changes
+  myRequest.onreadystatechange = function () {
+    // 4. check if the request has a readyState of 4, which indicates the server has responded (complete)
+    if (myRequest.readyState === 4) {
+      // 5. insert the text sent by the server into the HTML of the 'ajax-content'
+      document.getElementById('footer').innerHTML = myRequest.responseText;
+    }
+  };
+  myRequest.send();
+
+</script>
 
 <!-- External JavaScripts
 ============================================= -->

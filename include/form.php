@@ -27,7 +27,7 @@ require 'phpmailer/src/SMTP.php';
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'your-email@website.com', // Your Email Address
+				'email' => 'info@loletaboyzone.com', // Your Email Address
 				'name' => 'Your Name' // Your Name
 			);
 
@@ -37,8 +37,8 @@ $toemails[] = array(
 ---------------------------------------------------*/
 
 $fromemail = array(
-				'email' => 'no-reply@website.com', // Company's Email Address (preferably currently used Domain Name)
-				'name' => 'Company Name' // Company Name
+				'email' => 'info@loletaboyzone.com', // Company's Email Address (preferably currently used Domain Name)
+				'name' => 'Loletaboyzone' // Company Name
 			);
 
 

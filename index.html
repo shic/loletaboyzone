@@ -190,7 +190,7 @@
                         <div class="slider-caption slider-caption-center">
                             <div class="h5 mb-2 font-secondary" id="slider1Subtitle"></div>
                             <h2 class="bottommargin-sm text-white" id="slider1Title"></h2>
-                            <a href="#" class="button bg-white text-dark button-light" id="slider1Button"></a>
+                            <a href="girl.html" class="button bg-white text-dark button-light" id="slider1Button"></a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +200,7 @@
                         <div class="slider-caption slider-caption-center">
                             <div class="h5 mb-2 font-secondary" id="slider2Subtitle"></div>
                             <h2 class="bottommargin-sm text-white" id="slider2Title"></h2>
-                            <a href="#" class="button bg-white text-dark button-light" id="slider2Button"></a>
+                            <a href="boy.html" class="button bg-white text-dark button-light" id="slider2Button"></a>
                         </div>
                     </div>
                 </div>
@@ -209,7 +209,8 @@
                     <div class="container clearfix">
                         <div class="slider-caption slider-caption-center">
                             <h2 class="bottommargin-sm text-white" id="slider3Title"></h2>
-                            <a href="#" class="button bg-white text-dark button-light" id="slider3Button"></a>
+                            <a href="contact.html" class="button bg-white text-dark button-light"
+                               id="slider3Button"></a>
                         </div>
                     </div>
                 </div>
@@ -241,7 +242,7 @@
                                 <div class="item-desc">
                                     <p id="productImageTextDescription1"></p>
                                 </div>
-                                <a href="#" class="more-link clearfix">detail</a>
+                                <a id="productImageText1Action" href="girl.html" class="more-link clearfix"></a>
 
                             </div>
                         </div>
@@ -279,7 +280,7 @@
                                 <div class="item-desc">
                                     <p id="productImageTextDescription2"></p>
                                 </div>
-                                <a href="#" class="more-link clearfix">detail</a>
+                                <a id="productImageText2Action" href="girl.html" class="more-link clearfix"></a>
 
                             </div>
                         </div>
@@ -314,9 +315,10 @@
                                 <div class="item-desc">
                                     <p id="companyIntroduction"></p>
                                 </div>
-                                <div class="button button-border button-circle nomargin font-secondary"
-                                     id="companyAction">
-                                </div>
+
+                                <a href="about.html" class="button button-border button-circle nomargin font-secondary"
+                                   id="companyAction">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -548,11 +550,11 @@
 
   // Slider
   document.getElementById('slider1Title').innerHTML = loleta.toUpperCase();
-  document.getElementById('slider1Subtitle').innerHTML = "La nostra marca";
+  document.getElementById('slider1Subtitle').innerHTML = "";
   document.getElementById('slider1Button').innerHTML = detail;
 
   document.getElementById('slider2Title').innerHTML = boyzone.toUpperCase();
-  document.getElementById('slider2Subtitle').innerHTML = "La nostra marca";
+  document.getElementById('slider2Subtitle').innerHTML = "";
   document.getElementById('slider2Button').innerHTML = detail;
 
   document.getElementById('slider3Title').innerHTML = contactUs.toUpperCase();
@@ -577,8 +579,10 @@
   // Product image text
   document.getElementById('productImageTextTitle1').innerHTML = loleta;
   document.getElementById('productImageTextDescription1').innerHTML = loletaDescription;
+  document.getElementById('productImageText1Action').innerHTML = detail;
   document.getElementById('productImageTextTitle2').innerHTML = boyzone;
   document.getElementById('productImageTextDescription2').innerHTML = boyzoneDescription;
+  document.getElementById('productImageText2Action').innerHTML = detail;
 
   // Contact us
   document.getElementById('contactUsSection').innerHTML = "Se avete domande o suggerimenti, mettetevi in contatto con us: ";
