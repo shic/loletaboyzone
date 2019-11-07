@@ -183,27 +183,23 @@
                     <div class="form-widget">
 
                         <div class="form-result"></div>
-                        <form action="mailto:name@example.com?subject=Website Feedback" method="post"
-                              enctype="text/plain">
-                            Email Adress:<br/>
-                            <input type="text" name="email_address" value="" maxlength="100"/><br/>
 
-                            Comments:<br/>
-                            <textarea rows="5" cols="20" name="comments"></textarea><br/>
+                        <form
+                            action="https://formspree.io/xzbbbgnq"
+                            method="POST"
+                        >
+                            <label>
+                                Your email:
+                                <input type="text" name="_replyto">
+                            </label>
+                            <label>
+                                Your message:
+                                <textarea name="message"></textarea>
+                            </label>
 
-                            <input type="submit" value="Submit"/>
+                            <!-- your other form fields go here -->
 
-                        </form>
-                        <form action="mailto:name@example.com?subject=Email from loletaboyzone.com" method="post"
-                              enctype="text/plain">
-                            Email:<br/>
-                            <input type="text" name="email_address" value="" maxlength="100"/><br/>
-
-                            <br/>
-                            <textarea rows="5" cols="20" name="comments"></textarea><br/>
-
-                            <input type="submit" value="Submit"/>
-
+                            <button type="submit">Send</button>
                         </form>
 
                         <form id="template-contactform" name="template-contactform" action="include/form.php"
@@ -259,7 +255,7 @@
                                 </button>
                             </div>
 
-                            <input type="hidden" name="prefix" value="template-contactform-">
+                            <input type="hidden" name="prefix" value="loletaboyzone.com">
 
                         </form>
 
