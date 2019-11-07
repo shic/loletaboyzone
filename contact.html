@@ -184,11 +184,20 @@
 
                         <div class="form-result"></div>
 
-                        <!--
-                                                <form id="template-contactform" name="template-contactform" action="include/form.php" method="post">
-                        -->
-                        <form class="nobottommargin" action="https://getform.io/f/a3605345-6321-4d5b-a66c-fb829ec796eb"
-                              method="POST">
+                        <form action="mailto:name@example.com?subject=Email from loletaboyzone.com" method="post"
+                              enctype="text/plain">
+                            Email:<br/>
+                            <input type="text" name="email_address" value="" maxlength="100"/><br/>
+
+                            <br/>
+                            <textarea rows="5" cols="20" name="comments"></textarea><br/>
+
+                            <input type="submit" value="Submit"/>
+
+                        </form>
+
+                        <form id="template-contactform" name="template-contactform" action="include/form.php"
+                              method="post">
 
                             <div class="form-process"></div>
 
@@ -243,6 +252,7 @@
                             <input type="hidden" name="prefix" value="template-contactform-">
 
                         </form>
+
                     </div>
 
                 </div><!-- .postcontent end -->
