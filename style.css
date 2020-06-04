@@ -7003,6 +7003,12 @@ body:not(.device-touch):not(.device-sm):not(.device-xs) .product-image > a {
   margin-bottom: 4px;
 }
 
+.product-price-custom-product-color {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
 .product-price {
   font-size: 18px;
   font-weight: 700;
