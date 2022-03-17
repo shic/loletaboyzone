@@ -8,8 +8,8 @@
     <!-- Stylesheets
     ============================================= -->
     <link
-        href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Montserrat:300,400,500,600,700|Merriweather:300,400,300i,400i"
-        rel="stylesheet" type="text/css"/>
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Montserrat:300,400,500,600,700|Merriweather:300,400,300i,400i"
+            rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="../style.css" type="text/css"/>
     <link rel="stylesheet" href="../css/dark.css" type="text/css"/>
@@ -87,7 +87,7 @@
                                             <li><a href="girl0.html">
                                                 <div id="headerGirl0"></div>
                                             </a></li>
-<li><a href="girl1.html">
+                                            <li><a href="girl1.html">
                                                 <div id="headerGirl1"></div>
                                             </a></li>
                                             <li><a href="girl2.html">
@@ -119,7 +119,7 @@
                                             <li><a href="boy0.html">
                                                 <div id="headerBoy0"></div>
                                             </a></li>
-<li><a href="boy1.html">
+                                            <li><a href="boy1.html">
                                                 <div id="headerBoy1"></div>
                                             </a></li>
                                             <li><a href="boy2.html">
@@ -302,20 +302,20 @@
 
 <!-- Common component -->
 <script>
-  // 1. create a new XMLHttpRequest object -- an object like any other!
-  var myRequest = new XMLHttpRequest();
-  // 2. open the request and pass the HTTP method name and the resource as parameters
-  //myRequest.open('GET', 'https://codepen.io/eclairereese/pen/BzQBzR.html');
-  myRequest.open('GET', 'footer.html');
-  // 3. write a function that runs anytime the state of the AJAX request changes
-  myRequest.onreadystatechange = function () {
-    // 4. check if the request has a readyState of 4, which indicates the server has responded (complete)
-    if (myRequest.readyState === 4) {
-      // 5. insert the text sent by the server into the HTML of the 'ajax-content'
-      document.getElementById('footer').innerHTML = myRequest.responseText;
-    }
-  };
-  myRequest.send();
+    // 1. create a new XMLHttpRequest object -- an object like any other!
+    var myRequest = new XMLHttpRequest();
+    // 2. open the request and pass the HTTP method name and the resource as parameters
+    //myRequest.open('GET', 'https://codepen.io/eclairereese/pen/BzQBzR.html');
+    myRequest.open('GET', 'footer.html');
+    // 3. write a function that runs anytime the state of the AJAX request changes
+    myRequest.onreadystatechange = function () {
+        // 4. check if the request has a readyState of 4, which indicates the server has responded (complete)
+        if (myRequest.readyState === 4) {
+            // 5. insert the text sent by the server into the HTML of the 'ajax-content'
+            document.getElementById('footer').innerHTML = myRequest.responseText;
+        }
+    };
+    myRequest.send();
 
 </script>
 
@@ -329,68 +329,69 @@
 <script src="../js/functions.js"></script>
 
 <script>
-  const home = "home";
-  const detail = "detail";
-  const contactUs = "Contact us";
-  const view = "View";
-  const discover = "Discover";
-  const italiano = "Italiano";
-  const english = "English";
-  const headerWhoWeAre = "About";
+    const home = "home";
+    const detail = "detail";
+    const contactUs = "Contact us";
+    const view = "View";
+    const discover = "Discover";
+    const italiano = "Italiano";
+    const english = "English";
+    const headerWhoWeAre = "About";
 
-  const contactEmail = "info@loletaboyzone.com";
-  const address = "Address";
+    const contactEmail = "info@loletaboyzone.com";
+    const address = "Address";
 
-  // Brand
-  const loleta = "Loleta";
-  const loletaDescription = "Loleta marca descrizioni";
-  const boyzone = "Boyzone";
-  const boyzoneDescription = "Boyzone marca descrizioni";
+    // Brand
+    const loleta = "Loleta";
+    const loletaDescription = "Loleta marca descrizioni";
+    const boyzone = "Boyzone";
+    const boyzoneDescription = "Boyzone marca descrizioni";
 
-  // Category
-  const category3to18Months = "3-18 months";
-  const category3to18MonthsDescription = "Children's Clothing 18 Months ";
-  const category6to36Months = "12-36 months";
-  const category6to36MonthsDescription = "Children's Clothing 36 Months ";
-  const category0to3Years = "0-3 years old";
-  const category0to3YearsDescription = "Children's Clothing 0-3 years old";
-  const category3to7Years = "3-7 years old";
-  const category3to7YearsDescription = "Boys' Clothing 3-7 years old";
-  const category8to16Years = "8-16 years old";
-  const category8to16YearsDescription = "Boys' Clothing 8-16 years old";
+    // Category
+    const category3to18Months = "3-18 months";
+    const category3to18MonthsDescription = "Children's Clothing 18 Months ";
+    const category6to36Months = "12-36 months";
+    const category6to36MonthsDescription = "Children's Clothing 36 Months ";
+    const category0to3Years = "0-3 years old";
+    const category0to3YearsDescription = "Children's Clothing 0-3 years old";
+    const category3to7Years = "3-7 years old";
+    const category3to7YearsDescription = "Boys' Clothing 3-7 years old";
+    const category8to16Years = "8-16 years old";
+    const category8to16YearsDescription = "Boys' Clothing 8-16 years old";
 
-  // Objective
-  document.getElementById('objective1Title').innerHTML = "Objective";
-  document.getElementById('objective1Content').innerHTML = "Loleta and Boyzone are the series of brands for clothing from 3 months to 16 years old that the GoldenAge Group has created since thirty years ago. It was established in Italy. The group's objective has always been to know how to adapt to the demands and challenges that the clothing market has always launched.\n";
-  document.getElementById('objective2Title').innerHTML = "Future";
-  document.getElementById('objective2Content').innerHTML = "il futuro imminente riservera’ sicuramente altre sfide da combattere e vincere, grazie alla professionalita’ e alla serieta’ che da sempre sono il marchio di fabbrica del Gruppo golden age . ";
-
-
-  // Header
-  document.getElementById('headerLanguages').innerHTML = "Supported languages";
-  document.getElementById('headerLanguagesItalian').innerHTML = italiano;
-  document.getElementById('headerLanguagesEnglish').innerHTML = english;
-
-  document.getElementById('headerHome').innerHTML = home;
-
-  document.getElementById('headerGirl').innerHTML = "girl" + " | " + loleta;
-  document.getElementById('headerGirl0').innerHTML = category0to9Months;
-document.getElementById('headerGirl1').innerHTML = category3to18Months;
-  document.getElementById('headerGirl2').innerHTML = category6to36Months;
-  document.getElementById('headerGirl3').innerHTML = category3to7Years;
-  document.getElementById('headerGirl4').innerHTML = category8to16Years;
-
-  document.getElementById('headerBoy').innerHTML = "boy" + " | " + boyzone;
-  document.getElementById('headerBoy0').innerHTML = category0to9Months;
-  document.getElementById('headerBoy1').innerHTML = category3to18Months;  document.getElementById('headerBoy2').innerHTML = category6to36Months;
-  document.getElementById('headerBoy3').innerHTML = category3to7Years;
-  document.getElementById('headerBoy4').innerHTML = category8to16Years;
+    // Objective
+    document.getElementById('objective1Title').innerHTML = "Objective";
+    document.getElementById('objective1Content').innerHTML = "Loleta and Boyzone are the series of brands for clothing from 3 months to 16 years old that the GoldenAge Group has created since thirty years ago. It was established in Italy. The group's objective has always been to know how to adapt to the demands and challenges that the clothing market has always launched.\n";
+    document.getElementById('objective2Title').innerHTML = "Future";
+    document.getElementById('objective2Content').innerHTML = "il futuro imminente riservera’ sicuramente altre sfide da combattere e vincere, grazie alla professionalita’ e alla serieta’ che da sempre sono il marchio di fabbrica del Gruppo golden age . ";
 
 
-  document.getElementById('headerWhoWeAre').innerHTML = headerWhoWeAre;
-  document.getElementById('headerContact').innerHTML = contactUs;
+    // Header
+    document.getElementById('headerLanguages').innerHTML = "Supported languages";
+    document.getElementById('headerLanguagesItalian').innerHTML = italiano;
+    document.getElementById('headerLanguagesEnglish').innerHTML = english;
 
-  document.getElementById('headerHome').innerHTML = "home";
+    document.getElementById('headerHome').innerHTML = home;
+
+    document.getElementById('headerGirl').innerHTML = "girl" + " | " + loleta;
+    document.getElementById('headerGirl0').innerHTML = category0to9Months;
+    document.getElementById('headerGirl1').innerHTML = category3to18Months;
+    document.getElementById('headerGirl2').innerHTML = category6to36Months;
+    document.getElementById('headerGirl3').innerHTML = category3to7Years;
+    document.getElementById('headerGirl4').innerHTML = category8to16Years;
+
+    document.getElementById('headerBoy').innerHTML = "boy" + " | " + boyzone;
+    document.getElementById('headerBoy0').innerHTML = category0to9Months;
+    document.getElementById('headerBoy1').innerHTML = category3to18Months;
+    document.getElementById('headerBoy2').innerHTML = category6to36Months;
+    document.getElementById('headerBoy3').innerHTML = category3to7Years;
+    document.getElementById('headerBoy4').innerHTML = category8to16Years;
+
+
+    document.getElementById('headerWhoWeAre').innerHTML = headerWhoWeAre;
+    document.getElementById('headerContact').innerHTML = contactUs;
+
+    document.getElementById('headerHome').innerHTML = "home";
 
 </script>
 </body>
