@@ -85,7 +85,10 @@
                                         <div>Loleta</div>
                                     </a>
                                         <ul>
-                                            <li><a href="girl1.html">
+                                            <li><a href="girl0.html">
+                                                <div id="headerGirl0"></div>
+                                            </a></li>
+<li><a href="girl1.html">
                                                 <div id="headerGirl1"></div>
                                             </a></li>
                                             <li><a href="girl2.html">
@@ -114,7 +117,10 @@
                                         <div>Boyzone</div>
                                     </a>
                                         <ul>
-                                            <li><a href="boy1.html">
+                                            <li><a href="boy0.html">
+                                                <div id="headerBoy0"></div>
+                                            </a></li>
+<li><a href="boy1.html">
                                                 <div id="headerBoy1"></div>
                                             </a></li>
                                             <li><a href="boy2.html">
@@ -194,6 +200,16 @@
                     </div>
 
                     <div class="col-lg-8">
+                        <!-- 0 -->
+                        <div id="0to9Months" class="row align-items-center mt-4">
+                            <div class="col-sm-6">
+                                <img src="images/boy/0.jpg" alt="Image 1" class="">
+                            </div>
+                            <div class="col-sm-6">
+                                <h3><a href="boy0.html" id="category0Title"></a></h3>
+                                <p class="mb-2" id="category0Subtitle"></p>
+                            </div>
+                        </div>
                         <!-- 1 -->
                         <div id="3to18Months" class="row align-items-center mt-4">
                             <div class="col-sm-6">
@@ -309,6 +325,8 @@
   const boyzoneDescription = "Boyzone marca descrizioni";
 
   // Category
+  const category0to9Months = "0-9 mesi";
+  const category0to9MonthsDescription = "COLLEZIONE MINI BOY";
   const category3to18Months = "3-18 mesi";
   const category3to18MonthsDescription = "COLLEZIONE LAYETTE BOY";
   const category6to36Months = "12-36 mesi";
@@ -321,6 +339,9 @@
   // Loleta
   document.getElementById('pageTitle').innerHTML = boyzoneUpperCase;
   document.getElementById('pageSubtitle').innerHTML = "Boy Zone e' un total-look che veste i maschietti new born dai 3 mesi di eta'  fino al ragazzo di 16 anni. Un fit attuale, al passo coi tempi, comodo, e comunque sempre realizzato con i tessuti piu' morbidi e naturali.";
+
+  document.getElementById('category0Title').innerHTML = category0to9Months;
+  document.getElementById('category0Subtitle').innerHTML = category0to9MonthsDescription;
 
   document.getElementById('category1Title').innerHTML = category3to18Months;
   document.getElementById('category1Subtitle').innerHTML = category3to18MonthsDescription;
@@ -343,14 +364,15 @@
   document.getElementById('headerHome').innerHTML = home;
 
   document.getElementById('headerGirl').innerHTML = "girl" + " | " + loleta;
-  document.getElementById('headerGirl1').innerHTML = category3to18Months;
+  document.getElementById('headerGirl0').innerHTML = category0to9Months;
+document.getElementById('headerGirl1').innerHTML = category3to18Months;
   document.getElementById('headerGirl2').innerHTML = category6to36Months;
   document.getElementById('headerGirl3').innerHTML = category3to7Years;
   document.getElementById('headerGirl4').innerHTML = category8to16Years;
 
   document.getElementById('headerBoy').innerHTML = "boy" + " | " + boyzone;
-  document.getElementById('headerBoy1').innerHTML = category3to18Months;
-  document.getElementById('headerBoy2').innerHTML = category6to36Months;
+  document.getElementById('headerBoy0').innerHTML = category0to9Months;
+  document.getElementById('headerBoy1').innerHTML = category3to18Months;  document.getElementById('headerBoy2').innerHTML = category6to36Months;
   document.getElementById('headerBoy3').innerHTML = category3to7Years;
   document.getElementById('headerBoy4').innerHTML = category8to16Years;
 
